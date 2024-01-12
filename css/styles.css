@@ -569,7 +569,7 @@ body {
 .modal-five-div {
   margin-bottom: 24px;
 }
-.input-checkbox:checked {
+.input-checkbox:checked + .label-checkbox span:first-child {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
