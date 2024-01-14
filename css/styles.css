@@ -19,6 +19,8 @@ body {
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .div-class {
   display: flex;
@@ -151,7 +153,7 @@ body {
 }
 .hero-button:hover,
 .hero-button:focus {
-  color: var(--ocean-color);
+  background-color: var(--ocean-color);
 }
 
 /* Section 2 */
@@ -543,7 +545,7 @@ body {
   top: 50%;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  fill: #4d5ae5;
+  /* fill: #4d5ae5; */
 }
 .modal-textarea-div {
   margin-bottom: 16px;
@@ -568,6 +570,9 @@ body {
 }
 .modal-five-div {
   margin-bottom: 24px;
+}
+.input-checkbox:focus + .modal-form-svg:first-child {
+  fill: #4d5ae5;
 }
 .input-checkbox:checked + .label-checkbox span:first-child {
   background-color: #404bbf;
