@@ -86,7 +86,27 @@ body {
 .tab-bar:focus {
   color: var(--ocean-color);
 }
-.svg-nav {
+.underline-nav-link-studio::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background: #404bbf;
+  border-radius: 2px;
+  display: block;
+  height: 4px;
+  bottom: -5px;
+}
+.underline-nav-link-porto::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background: #404bbf;
+  border-radius: 2px;
+  display: block;
+  height: 4px;
+  bottom: -5px;
+}
+.tab-bar:focus .svg-nav {
   width: 48px;
   height: 4px;
 }
@@ -166,6 +186,8 @@ body {
 
 .how-to-do-it {
   padding: 120px 0;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .visually-hidden {
   position: absolute;
@@ -219,6 +241,8 @@ body {
 
 .what-we-do {
   padding-bottom: 120px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .what-we-do-list {
   display: flex;
@@ -243,6 +267,8 @@ body {
 .our-team {
   background-color: var(--cloud-color);
   padding: 120px 0;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .our-team-list {
   display: flex;
@@ -295,6 +321,8 @@ body {
 
 .customers {
   padding: 120px 0;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .customers-title {
   font-family: "Roboto", sans-serif;
@@ -431,9 +459,7 @@ body {
 ::placeholder {
   color: #ffffff;
 }
-.modal-textarea::placeholder {
-  color: #8e8f99;
-}
+
 .subscribe-button {
   min-width: 165px;
   height: 40px;
@@ -561,6 +587,9 @@ body {
 .modal-textarea-div {
   margin-bottom: 16px;
 }
+.modal-textarea::placeholder {
+  color: #8e8f99;
+}
 .modal-textarea {
   width: 100%;
   height: 120px;
@@ -632,7 +661,10 @@ body {
 }
 
 /* Portfolio */
-
+.main-section {
+  max-width: 1440px;
+  margin: 0 auto;
+}
 .porto-section {
   padding: 96px 0 120px 0;
 }
