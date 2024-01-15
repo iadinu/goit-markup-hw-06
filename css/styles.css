@@ -86,25 +86,29 @@ body {
 .tab-bar:focus {
   color: var(--ocean-color);
 }
-.underline-nav-link-studio::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  background: #404bbf;
-  border-radius: 2px;
+.underline-studio::after {
   display: block;
+  content: "";
+  width: 100%;
   height: 4px;
-  bottom: -5px;
+  border-radius: 2px;
+  background: #404bbf;
+  border: 1px solid #404bbf;
+  position: absolute;
+  left: 0;
+  top: 58px;
 }
-.underline-nav-link-porto::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  background: #404bbf;
-  border-radius: 2px;
+.underline-portfolio::after {
   display: block;
+  content: "";
+  width: 100%;
   height: 4px;
-  bottom: -5px;
+  border-radius: 2px;
+  background: #404bbf;
+  border: 1px solid #404bbf;
+  position: absolute;
+  left: 0;
+  top: 58px;
 }
 .tab-bar:focus .svg-nav {
   width: 48px;
