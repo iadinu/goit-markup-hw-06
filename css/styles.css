@@ -65,24 +65,30 @@ body {
   display: flex;
   gap: 40px;
 }
-.tab-bar::after {
+.tab-bar {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate-color);
   padding: 24px 0;
-  background-color: var(--ocean-color);
+}
+.tab-bar::after {
   content: "";
   position: absolute;
   left: 0;
   bottom: -1px;
   height: 4px;
   border-radius: 2px;
+  background-color: var(--ocean-color);
 }
 .tab-bar:hover,
 .tab-bar:focus {
   color: var(--ocean-color);
+}
+.svg-nav {
+  width: 48px;
+  height: 4px;
 }
 .address-bar {
   font-style: normal;
@@ -425,6 +431,9 @@ body {
 ::placeholder {
   color: #ffffff;
 }
+.modal-textarea::placeholder {
+  color: #8e8f99;
+}
 .subscribe-button {
   min-width: 165px;
   height: 40px;
@@ -539,13 +548,15 @@ body {
 .modal-input:focus {
   border-color: #4d5ae5;
 }
+.modal-input:focus + .modal-form-svg {
+  fill: #4d5ae5;
+}
 .modal-form-svg {
   position: absolute;
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  /* fill: #4d5ae5; */
 }
 .modal-textarea-div {
   margin-bottom: 16px;
@@ -570,9 +581,6 @@ body {
 }
 .modal-five-div {
   margin-bottom: 24px;
-}
-.input-checkbox:focus + .modal-form-svg:first-child {
-  fill: #4d5ae5;
 }
 .input-checkbox:checked + .label-checkbox span:first-child {
   background-color: #404bbf;
