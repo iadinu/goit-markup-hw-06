@@ -12,7 +12,10 @@ body {
   color: var(--slate-color);
   font-family: "Roboto", sans-serif;
 }
-
+.big-body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
 /*Header*/
 
 .main-header {
@@ -150,7 +153,7 @@ body {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/people-office.jpg);
-  max-width: 1440px;
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -190,8 +193,6 @@ body {
 
 .how-to-do-it {
   padding: 120px 0;
-  max-width: 1440px;
-  margin: 0 auto;
 }
 .visually-hidden {
   position: absolute;
@@ -245,8 +246,6 @@ body {
 
 .what-we-do {
   padding-bottom: 120px;
-  max-width: 1440px;
-  margin: 0 auto;
 }
 .what-we-do-list {
   display: flex;
@@ -271,8 +270,6 @@ body {
 .our-team {
   background-color: var(--cloud-color);
   padding: 120px 0;
-  max-width: 1440px;
-  margin: 0 auto;
 }
 .our-team-list {
   display: flex;
@@ -325,8 +322,6 @@ body {
 
 .customers {
   padding: 120px 0;
-  max-width: 1440px;
-  margin: 0 auto;
 }
 .customers-title {
   font-family: "Roboto", sans-serif;
@@ -372,7 +367,6 @@ body {
   margin: 0 auto;
   padding: 100px 0;
   display: flex;
-  max-width: 1440px;
 }
 .footer-div {
   align-items: baseline;
@@ -665,10 +659,7 @@ body {
 }
 
 /* Portfolio */
-.main-section {
-  max-width: 1440px;
-  margin: 0 auto;
-}
+
 .porto-section {
   padding: 96px 0 120px 0;
 }
