@@ -12,10 +12,7 @@ body {
   color: var(--slate-color);
   font-family: "Roboto", sans-serif;
 }
-.big-body {
-  max-width: 1440px;
-  margin: 0 auto;
-}
+
 /*Header*/
 
 .main-header {
