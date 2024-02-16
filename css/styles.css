@@ -76,19 +76,7 @@ body {
 .head-ancor:focus {
   color: var(--ocean-color);
 }
-.underline-studio::after {
-  display: block;
-  content: "";
-  width: 100%;
-  max-height: 4px;
-  border-radius: 2px;
-  background: #404bbf;
-  border: 1px solid #404bbf;
-  position: absolute;
-  left: 0;
-  bottom: -25px;
-}
-.underline-portfolio::after {
+.underline::after {
   display: block;
   content: "";
   width: 100%;
@@ -615,16 +603,13 @@ body {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .big-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   list-style: none;
-
+  grid-template-columns: 360px 360px 360px;
   column-gap: 24px;
   row-gap: 48px;
 }
-/* .big-li {
-  width: calc((100% - 48px) / 3);
-} */
+
 .link-porto {
   text-decoration: none;
   display: block;
@@ -644,7 +629,6 @@ body {
   overflow: hidden;
 }
 .modal-p-img {
-  /* display: none; */
   position: absolute;
   top: 0;
   font-size: 16px;
